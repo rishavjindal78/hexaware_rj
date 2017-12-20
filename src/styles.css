@@ -1,0 +1,15 @@
+
+
+body {
+    height: 100%;
+    /*background:#222 url('assets/img/stars.jpg') center no-repeat;*/
+background:gray;
+background-size: cover;
+color:white;
+height:100%;
+text-align:center;
+display:flex;
+align-items: center;
+scrollbar-face-color: red;    
+
+}

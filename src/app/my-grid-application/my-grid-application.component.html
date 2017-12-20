@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-8">
+
+            <h1>Ag-Grid - Infinite scroll</h1>
+            <h3>With
+                <200 Columns and supports more than 10Lakh+ records </h3>
+
+                    <button class="btn btn-primary" (click)="exportExcel()">Export Selected</button>
+                    <button class="btn btn-primary" (click)="autoSizeAllColumns()">Autosize Columns</button>
+                    <button class="btn btn-primary" (click)="sizeToFitToColumns()">Size To Fit</button>
+                    <button class="btn btn-primary" (click)="restGridColumns()">Reset Columns</button>
+                    <button class="btn btn-primary" (click)="refreshGrid()">Refresh Grid</button>
+
+                    <!--<button (click)="onBtLast()" id="btLast" >To Last</button>
+<button (click)="sortByAthleteAsc()">Athlete Ascending</button>-->
+
+        </div>
+    </div>
+ <br> 
+    <div class="row">
+            <div class="col-1">
+               
+            </div>
+        <div class="col-8">
+            <ag-grid-angular style="width: 900px; height: 700px;" class="ag-dark" [columnDefs]="columnDefs" [defaultColDef]="defaultColumnDefs"
+                [enableFilter]="true" enableColResize enableSorting [enableServerSideSorting]="true" [enableServerSideFilter]="true"
+                [floatingFilter]="true" [floatingFiltersHeight]="floatingFiltersHeight" [excelStyles]="excelStyles" [enableColResize]="true"
+                [rowBuffer]="rowBuffer" [debug]="true" [rowSelection]="rowSelection" [rowDeselection]="true" [rowModelType]="rowModelType"
+                [paginationPageSize]="paginationPageSize" [cacheOverflowSize]="cacheOverflowSize" [maxConcurrentDatasourceRequests]="maxConcurrentDatasourceRequests"
+                [infiniteInitialRowCount]="infiniteInitialRowCount" [maxBlocksInCache]="maxBlocksInCache" [cacheBlockSize]="cacheBlockSize"
+                [pagination]="true" [paginationPageSize]="paginationPageSize" [gridOptions]="gridOptions" (gridReady)="onGridReady($event)">
+            </ag-grid-angular>
+        </div>
+
+    </div>
+</div>
